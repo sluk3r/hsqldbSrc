@@ -1,0 +1,8 @@
+*.class
+.idea/**
+*.iml
+target
+.idea/libraries/**
+.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_3.xml
+.idea/libraries/Maven__org_apache_ant_ant_1_9_3.xml
+.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml
