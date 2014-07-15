@@ -360,7 +360,7 @@ public class Preprocessor {
         this.state = CONDITION_NONE;
 
         // optimization - eliminates a full document copy and a full document
-        //                equality test for files with no preprocessor
+        //                equality hsqldb for files with no preprocessor
         //                directives
         if (!this.document.contains(Line.DIRECTIVE_PREFIX)) {
             return false;

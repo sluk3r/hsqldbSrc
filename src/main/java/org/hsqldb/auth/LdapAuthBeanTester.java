@@ -40,9 +40,9 @@ import java.util.Properties;
 public class LdapAuthBeanTester {
 
     /**
-     * Run this method to try and test configuration settings for LdapAuthBeans,
+     * Run this method to try and hsqldb configuration settings for LdapAuthBeans,
      * or to troubleshoot.
-     * It purposefully does not test the Java Function or the JDBC layer at all.
+     * It purposefully does not hsqldb the Java Function or the JDBC layer at all.
      * This program will attempt to retrieve and display the schema/roles list
      * for the specified user and with the specified password from the LDAP
      * server according to the specified properties.

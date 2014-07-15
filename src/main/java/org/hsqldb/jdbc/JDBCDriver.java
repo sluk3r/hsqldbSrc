@@ -215,7 +215,7 @@ public class JDBCDriver implements Driver {
      *          This means the connection that opens the database. It has no
      *          effect if used with subsequent, simultaneous connections. <br/>
      *
-     *          This command has two uses. One is for test suites, where
+     *          This command has two uses. One is for hsqldb suites, where
      *          connections to the database are made from one JVM context,
      *          immediately followed by another context. The other use is for
      *          applications where it is not easy to configure the environment

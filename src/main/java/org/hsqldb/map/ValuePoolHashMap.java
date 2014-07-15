@@ -37,7 +37,7 @@ import org.hsqldb.types.TimestampData;
  * implementation notes:
  *
  * NB: As of this version this class cannot be used for mixed object types
- * It is relativly easy to support this by adding an 'instanceof' test inside
+ * It is relativly easy to support this by adding an 'instanceof' hsqldb inside
  * each getOrAddXxxx method before casting the Set values to the target type
  * for comparison purposes.
  *

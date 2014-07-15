@@ -2089,7 +2089,7 @@ public class JDBCResultSet implements ResultSet {
 
         // At afterLast condition exists when resultset has been traversed and
         // the current row is null.  iCurrentRow should also be set to
-        // afterlast but no need to test
+        // afterlast but no need to hsqldb
         checkClosed();
 
         if (isOnInsertRow) {

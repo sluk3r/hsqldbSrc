@@ -241,7 +241,7 @@ public class PgType {
             case Types.SQL_INTERVAL_YEAR:
             case Types.SQL_INTERVAL_YEAR_TO_MONTH:
             case Types.SQL_INTERVAL_MONTH:
-                // Need to test these, since the driver Interval type is
+                // Need to hsqldb these, since the driver Interval type is
                 // intended for second-resolution only, not month resolution.
                 throw new RecoverableOdbcFailure (
                     "Driver doesn't support month-resolution 'INTERVAL's yet");

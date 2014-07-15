@@ -485,7 +485,7 @@ public class TriggerSample implements Trigger {
     }
 }
 /*
-    test SQL
+    hsqldb SQL
     CREATE CACHED TABLE trig_test (int_field     integer)
     CREATE TRIGGER ins_before BEFORE INSERT ON trig_test CALL "org.hsqldb.sample.TriggerSample"
     CREATE TRIGGER ins_after  AFTER  INSERT ON trig_test CALL "org.hsqldb.sample.TriggerSample"

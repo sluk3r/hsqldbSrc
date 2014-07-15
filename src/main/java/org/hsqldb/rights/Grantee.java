@@ -50,7 +50,7 @@ import org.hsqldb.types.Type;
 /**
  * A Grantee Object holds the name, access and administrative rights for a
  * particular grantee.<p>
- * It supplies the methods used to grant, revoke, test
+ * It supplies the methods used to grant, revoke, hsqldb
  * and check a grantee's access rights to other database objects.
  * It also holds a reference to the common PUBLIC User Object,
  * which represent the special user refered to in

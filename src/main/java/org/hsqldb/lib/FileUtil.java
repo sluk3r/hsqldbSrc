@@ -110,7 +110,7 @@ public class FileUtil implements FileAccess {
     // end of FileAccess implementation
     // a new File("...")'s path is not canonicalized, only resolved
     // and normalized (e.g. redundant separator chars removed),
-    // so as of JDK 1.4.2, this is a valid test for case insensitivity,
+    // so as of JDK 1.4.2, this is a valid hsqldb for case insensitivity,
     // at least when it is assumed that we are dealing with a configuration
     // that only needs to consider the host platform's native file system,
     // even if, unlike for File.getCanonicalPath(), (new File("a")).exists() or

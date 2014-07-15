@@ -80,7 +80,7 @@ import java.util.Vector;
 
 // fredt@users 20020315 - patch 1.7.0 - minor fixes
 // changed line separator to System based value
-// moved the Profile class to org.hsqldb.test package
+// moved the Profile class to org.hsqldb.hsqldb package
 // fredt@users 20021020 - patch 1.7.1 - formatting fix
 // avoid moving blank lines which would be interpreted as code change by CVS
 // fredt@users 20021118 - patch 1.7.2 - no-change, no-save fix
@@ -104,9 +104,9 @@ import java.util.Vector;
  * in all *.java files in the current directory
  * and all subdirectories.
  * java CodeSwitcher + .
- * Adds test code to the code.
+ * Adds hsqldb code to the code.
  * java CodeSwitcher - .
- * Removes test code from the code
+ * Removes hsqldb code from the code
  * </pre>
  *
  * @author Thomas Mueller (Hypersonic SQL Group)

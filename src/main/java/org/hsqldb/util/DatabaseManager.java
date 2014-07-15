@@ -440,7 +440,7 @@ implements ActionListener, WindowListener, KeyListener {
         String[] soptions = {
             "-AutoCommit on", "-AutoCommit off", "OCommit", "LRollback", "--",
             "-Disable MaxRows", "-Set MaxRows to 100", "--", "-Logging on",
-            "-Logging off", "--", "-Insert test data"
+            "-Logging off", "--", "-Insert hsqldb data"
         };
 
         addMenu(bar, "Options", soptions);
@@ -725,7 +725,7 @@ implements ActionListener, WindowListener, KeyListener {
             try {
                 cConn.commit();
             } catch (SQLException e) {}
-        } else if (s.equals("Insert test data")) {
+        } else if (s.equals("Insert hsqldb data")) {
             insertTestData();
         } else if (s.equals("Rollback")) {
             try {

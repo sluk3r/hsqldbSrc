@@ -168,7 +168,7 @@ public class ValidatingResourceBundle {
             resKeysFromEls.add(e.toString());
         Enumeration<String> allKeys = wrappedRCPRB.getKeys();
         while (allKeys.hasMoreElements()) {
-            // We can't test positional parameters, but we can verify that
+            // We can't hsqldb positional parameters, but we can verify that
             // referenced files exist by reading the values.
             // Pretty inefficient, but this can be optimized when I have time.
             val = allKeys.nextElement();

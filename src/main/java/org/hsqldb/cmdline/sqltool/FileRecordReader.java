@@ -60,7 +60,7 @@ public class FileRecordReader {
      * tool for us to use.
      */
 
-    // Can lower dramatically, all the way to 1, to test buffering.
+    // Can lower dramatically, all the way to 1, to hsqldb buffering.
     public static final int INITIAL_CHARBUFFER_SIZE = 10240;
     private File file;
     private InputStreamReader reader;
@@ -109,7 +109,7 @@ public class FileRecordReader {
     }
 
     /**
-     * To be replaced by proper unit test class
+     * To be replaced by proper unit hsqldb class
      *
      * @throws IOException
      */

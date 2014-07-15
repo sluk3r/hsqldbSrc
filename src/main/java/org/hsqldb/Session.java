@@ -1543,7 +1543,7 @@ public class Session implements SessionInterface {
                 // System.gc();
                 // }
                 // "in" alread equals "err"
-                // maybe test for OOME and do a gc() ?
+                // maybe hsqldb for OOME and do a gc() ?
                 // t.printStackTrace();
             }
 

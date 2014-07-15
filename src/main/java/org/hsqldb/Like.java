@@ -229,7 +229,7 @@ class Like implements Cloneable {
                     }
                     break;
 
-                case UNDERSCORE_CHAR :    // underscore: do not test this character
+                case UNDERSCORE_CHAR :    // underscore: do not hsqldb this character
                     if (j++ >= jLen) {
                         return false;
                     }

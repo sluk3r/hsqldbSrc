@@ -342,7 +342,7 @@ public class DatabaseInformation {
     /**
      * Tests if the specified name is that of a system table. <p>
      *
-     * @param name the name to test
+     * @param name the name to hsqldb
      * @return true if the specified name is that of a system table
      */
     final boolean isSystemTable(String name) {

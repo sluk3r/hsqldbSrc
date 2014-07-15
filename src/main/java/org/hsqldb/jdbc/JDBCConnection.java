@@ -300,9 +300,9 @@ import org.hsqldb.types.Type;
  * </ul>
  * </div> <p>
  *
- * For example: <b>'jdbc:hsqldb:file:test'</b> connects to a database
+ * For example: <b>'jdbc:hsqldb:file:hsqldb'</b> connects to a database
  * composed of some subset of the files listed above, where the expansion
- * of <b>&lt;path&gt;</b> is <b>'test'</b> prefixed with the canonical path of
+ * of <b>&lt;path&gt;</b> is <b>'hsqldb'</b> prefixed with the canonical path of
  * the JVM's effective working directory at the time the designated database
  * is first opened in-process. <p>
  *
@@ -319,34 +319,34 @@ import org.hsqldb.types.Type;
  * <p>
  *
  * Under <em>Windows</em> <sup><font size="-2">TM</font> </sup>, <b>
- * 'jdbc:hsqldb:file:c:\databases\test'</b> connects to a database located
+ * 'jdbc:hsqldb:file:c:\databases\hsqldb'</b> connects to a database located
  * on drive <b>'C:'</b> in the directory <b>'databases'</b>, composed
  * of some subset of the files: <p>
  *
  * <pre class="GeneralExample">
  * C:\
  * +--databases\
- *    +--test.properties
- *    +--test.script
- *    +--test.log
- *    +--test.data
- *    +--test.backup
- *    +--test.lck
+ *    +--hsqldb.properties
+ *    +--hsqldb.script
+ *    +--hsqldb.log
+ *    +--hsqldb.data
+ *    +--hsqldb.backup
+ *    +--hsqldb.lck
  * </pre>
  *
- * Under most variations of UNIX, <b>'jdbc:hsqldb:file:/databases/test'</b>
+ * Under most variations of UNIX, <b>'jdbc:hsqldb:file:/databases/hsqldb'</b>
  * connects to a database located in the directory <b>'databases'</b> directly
  * under root, once again composed of some subset of the files: <p>
  *
  * <pre class="GeneralExample">
  *
  * +--databases
- *    +--test.properties
- *    +--test.script
- *    +--test.log
- *    +--test.data
- *    +--test.backup
- *    +--test.lck
+ *    +--hsqldb.properties
+ *    +--hsqldb.script
+ *    +--hsqldb.log
+ *    +--hsqldb.data
+ *    +--hsqldb.backup
+ *    +--hsqldb.lck
  * </pre>
  *
  * <b>Some Guidelines:</b> <p>

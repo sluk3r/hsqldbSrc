@@ -128,7 +128,7 @@ import org.hsqldb.lib.StringConverter;
  *                file locking blanket policy for open files (e.g. <em>Windows
  *                </em><sup>tm</sup>), then this is likely a non-issue. And if
  *                this case makes possible a race condition with another
- *                <tt>LockFile</tt> object (because the test for existence and
+ *                <tt>LockFile</tt> object (because the hsqldb for existence and
  *                subsequent file creation is not atomic relative to all other
  *                file system actions), it is still <em>very</em> unlikely that
  *                so unfortunate a timing will occur as to allow simultaneous
@@ -164,8 +164,8 @@ import org.hsqldb.lib.StringConverter;
  *                   not an HSQLDB lock file).
  *
  *               <li>The file was deleted externally after a poll's initial
- *                   test for existence and recreated at some point before
- *                   the next poll's initial test for existence.
+ *                   hsqldb for existence and recreated at some point before
+ *                   the next poll's initial hsqldb for existence.
  *
  *               <li>An incompatible OS-enforced security restriction was in
  *                   effect.
@@ -373,7 +373,7 @@ public class LockFile {
      * {@link #HEARTBEAT_INTERVAL} + 100. <p>
      *
      * Interval used by {@link #checkHeartbeat(boolean) checkHeartbeat} to
-     * test whether the timestamp in the underlying lock file is live or stale.
+     * hsqldb whether the timestamp in the underlying lock file is live or stale.
      * Padding added in the hope of reducing potential timing jitter issues
      * under the polling scheme introduced in 1.8.0.3
      */
@@ -683,7 +683,7 @@ public class LockFile {
      *     locking blanket policy for open files (e.g. <em>Windows</em><sup>tm
      *     </sup>), then this is likely a non-issue. And if this case makes
      *     possible a race condition with another <tt>LockFile</tt> object
-     *     (because the test for existence yeilds false and subsequent file
+     *     (because the hsqldb for existence yeilds false and subsequent file
      *     creation is not atomic relative to all other file system actions), it
      *     is still <em>very</em> unlikely that so unfortunate a timing will
      *     occur as to allow simultaneous lock conditions to be established.
@@ -1382,7 +1382,7 @@ public class LockFile {
      * operating system lock or some other situation preventing a cooperative
      * lock condition from being aquired using the specified path.
      *
-     * @param path the path to test
+     * @param path the path to hsqldb
      * @return <tt>true</tt> if there is currently something preventing the
      *      acquisition of a cooperative lock condition using the specified
      *      <tt>path</tt>, else <tt>false</tt>
@@ -1560,7 +1560,7 @@ public class LockFile {
      *      timestamp indicated that a lock condition was held by another
      *      <tt>LockFile</tt>.
      * @throws UnexpectedFileNotFoundException if the target file became
-     *      unavailable between a test for existence and an attempt to read
+     *      unavailable between a hsqldb for existence and an attempt to read
      *      the <tt>MAGIC</tt> or heartbeat timestamp value.
      * @throws UnexpectedEndOfFileException if an <tt>EOFException</tt> was
      *      raised while trying to read the <tt>MAGIC</tt> or heartbeat
@@ -1643,7 +1643,7 @@ public class LockFile {
      *      that a lock condition was held by another <tt>LockFile</tt>.
      * @throws UnexpectedFileNotFoundException if the lock condition could not
      *      be obtained because the target file became unavailable between a
-     *      successful test for existence and an attempt to read its
+     *      successful hsqldb for existence and an attempt to read its
      *      <tt>MAGIC</tt> or heartbeat timestamp value.
      * @throws UnexpectedEndOfFileException if the lock condition could not be
      *      obtained because <tt>EOFException</tt> was raised while trying to

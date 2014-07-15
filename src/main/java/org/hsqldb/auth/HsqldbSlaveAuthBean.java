@@ -126,7 +126,7 @@ public class HsqldbSlaveAuthBean implements AuthFunctionBean {
                     c = null;  // Encourage GC
                 } catch (SQLException nestedSe) {
                     logger.error(
-                            "Failed to close test master/slave Connection",
+                            "Failed to close hsqldb master/slave Connection",
                             nestedSe);
                     if (problem == null) {
                         throw nestedSe;

@@ -844,7 +844,7 @@ implements ActionListener, WindowListener, KeyListener, MouseListener {
             // Added: (weconsultants@users) New menu options
             rbNativeLF, rbJavaLF, rbMotifLF, "--", "-Set Fonts", "--",
             boxAutoCommit, "--", "-Disable MaxRows", "-Set MaxRows to 100",
-            "--", boxLogging, "--", "-Insert test data"
+            "--", boxLogging, "--", "-Insert hsqldb data"
         };
 
         addMenu(bar, "Options", soptions);
@@ -1253,7 +1253,7 @@ implements ActionListener, WindowListener, KeyListener, MouseListener {
                 //  Added: (weconsultants@users)
                 CommonSwing.errorMessage(e);
             }
-        } else if (s.equals("Insert test data")) {
+        } else if (s.equals("Insert hsqldb data")) {
             insertTestData();
             refreshTree();
         } else if (s.equals("ROLLBACK*")) {
@@ -1695,7 +1695,7 @@ implements ActionListener, WindowListener, KeyListener, MouseListener {
 
             String upper = sql.toUpperCase(Locale.ENGLISH);
 
-            // This test can be very liberal.  Too liberal will just do
+            // This hsqldb can be very liberal.  Too liberal will just do
             // some extra refreshes.  Too conservative will display
             // obsolete info.
             if (upper.indexOf("ALTER") > -1 || upper.indexOf("DROP") > -1

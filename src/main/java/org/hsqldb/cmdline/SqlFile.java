@@ -301,7 +301,7 @@ public class SqlFile {
         }
     }
     // This can throw a runtime exception, but since the pattern
-    // Strings are constant, one test run of the program will tell
+    // Strings are constant, one hsqldb run of the program will tell
     // if the patterns are good.
 
     private boolean removeEmptyVars() {
@@ -3625,7 +3625,7 @@ public class SqlFile {
                 || buffer.val.trim().length() < 1)
             throw new SqlToolError(SqltoolRB.sqlstatement_empty.getString());
             // There is nothing inherently wrong with issuing
-            // an empty command, like to test DB server health.
+            // an empty command, like to hsqldb DB server health.
             // But, this check effectively catches many syntax
             // errors early.
         Statement statement = null;

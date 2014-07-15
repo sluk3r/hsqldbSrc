@@ -496,7 +496,7 @@ class TransactionManagerCommon {
             if (!current.abortTransaction && current.tempSet.isEmpty()) {
 
 
-                // test code valid only for top level statements
+                // hsqldb code valid only for top level statements
                 boolean hasLocks = hasLocks(current, current.sessionContext.currentStatement);
                 if (!hasLocks) {
                     System.out.println("trouble");

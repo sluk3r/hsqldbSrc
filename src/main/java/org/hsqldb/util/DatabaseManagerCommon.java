@@ -81,7 +81,7 @@ import java.util.Random;
 // sqlbob@users 20020401 - patch 1.7.0 by sqlbob (RMP) - enhancements
 // sqlbob@users 20020407 - patch 1.7.0 - reengineering
 // nickferguson@users 20021005 - patch 1.7.1 - enhancements
-// fredt@users 20021012 - patch 1.7.1 - changes to test database DDL
+// fredt@users 20021012 - patch 1.7.1 - changes to hsqldb database DDL
 // weconsultants@users 20041116 - patch 1.8.0 - in 'TestHelp' added 'IF EXISTS for both DROPS.
 //                                Now catching the execption that was never caught before.
 
@@ -176,7 +176,7 @@ class DatabaseManagerCommon {
         + "UPDATE Test SET Name='Hans' WHERE Id=# ;\n"
         + "SELECT * FROM Test WHERE Id=# ;\n"
         + "DELETE FROM Test WHERE Id=# ;\n" + "DROP TABLE Test IF EXISTS;",
-        "This test script is parsed by the DatabaseManager\n"
+        "This hsqldb script is parsed by the DatabaseManager\n"
         + "It may be changed manually. Rules:\n"
         + "- it must start with -->>>TEST<<<--.\n"
         + "- each line must end with ';' (no spaces after)\n"

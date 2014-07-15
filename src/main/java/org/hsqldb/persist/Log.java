@@ -388,7 +388,7 @@ public class Log {
             defrag = true;
         }
 
-        // test code
+        // hsqldb code
         /*
         if (database.logger.isStoredFileAccess) {
             defrag = false;
@@ -488,7 +488,7 @@ public class Log {
 
         try {
 
-// test
+// hsqldb
 /*
             DataFileDefrag.checkAllTables(database);
 */
@@ -510,7 +510,7 @@ public class Log {
             throw Error.error(ErrorCode.DATA_FILE_ERROR, e);
         }
 
-// test
+// hsqldb
 /*
         DataFileDefrag.checkAllTables(database);
 */

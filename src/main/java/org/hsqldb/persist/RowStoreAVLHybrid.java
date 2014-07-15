@@ -82,7 +82,7 @@ public class RowStoreAVLHybrid extends RowStoreAVL implements PersistentStore {
             setTimestamp(session.getActionTimestamp());
         }
 
-// test code to force use of cache
+// hsqldb code to force use of cache
 /*
         if (diskBased) {
             this.maxMemoryRowCount = 0;

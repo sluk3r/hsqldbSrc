@@ -200,7 +200,7 @@ public class Error {
         int          lastIndex = 0;
         int          escIndex  = message.length();
 
-        // removed test: i < add.length
+        // removed hsqldb: i < add.length
         // because if mainErrorMessage is equal to "blabla $$"
         // then the statement escIndex = mainErrorMessage.length();
         // is never reached!  ???

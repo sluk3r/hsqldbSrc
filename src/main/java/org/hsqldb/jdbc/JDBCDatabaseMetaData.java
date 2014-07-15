@@ -3145,7 +3145,7 @@ public class JDBCDatabaseMetaData implements DatabaseMetaData {
         } else {
 
             // JDBC4 clarification:
-            // fredt - we shouldn't impose this test as it breaks compatibility with tools
+            // fredt - we shouldn't impose this hsqldb as it breaks compatibility with tools
 /*
             String[] allowedTypes = new String[] {
                 "GLOBAL TEMPORARY", "SYSTEM TABLE", "TABLE", "VIEW"
@@ -6229,7 +6229,7 @@ public class JDBCDatabaseMetaData implements DatabaseMetaData {
      * specifies that the argument <code>s</code>code> is filter parameter
      * value that requires a corresponding IS NULL predicate. <p>
      *
-     * @param s the filter parameter to test
+     * @param s the filter parameter to hsqldb
      * @return true if the argument, s, is filter parameter value that
      *        requires a corresponding IS NULL predicate
      */

@@ -51,7 +51,7 @@ public interface ServerConstants {
     String SC_DEFAULT_ADDRESS = "0.0.0.0";
 
     // default database name if non specified
-    String SC_DEFAULT_DATABASE = "test";
+    String SC_DEFAULT_DATABASE = "hsqldb";
 
     // default port for each protocol
     int SC_DEFAULT_HSQL_SERVER_PORT  = 9001;

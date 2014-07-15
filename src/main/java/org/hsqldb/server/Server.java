@@ -113,7 +113,7 @@ import org.hsqldb.result.ResultConstants;
  * | --help          |             |          | prints this message          |
  * | --address       | name|number | any      | server inet address          |
  * | --port          | number      | 9001/544 | port at which server listens |
- * | --database.i    | [type]spec  | 0=test   | path of database i           |
+ * | --database.i    | [type]spec  | 0=hsqldb   | path of database i           |
  * | --dbname.i      | alias       |          | url alias for database i     |
  * | --silent        | true|false  | true     | false => display all queries |
  * | --trace         | true|false  | false    | display JDBC trace messages  |
@@ -192,7 +192,7 @@ import org.hsqldb.result.ResultConstants;
  *
  * <pre>
  * server.port=9001
- * server.database.0=test
+ * server.database.0=hsqldb
  * server.dbname.0=...
  * ...
  * server.database.n=...
@@ -1347,7 +1347,7 @@ public class Server implements HsqlSocketRequestHandler, Notified {
      * Retrieves whether the specified socket should be allowed
      * to make a connection.
      *
-     * @param socket the socket to test.
+     * @param socket the socket to hsqldb.
      */
     protected boolean allowConnection(Socket socket) {
 

@@ -312,7 +312,7 @@ public class Calculator {
         return total;
     }
 
-    /* TODO:  Replace this method with a proper unit test class */
+    /* TODO:  Replace this method with a proper unit hsqldb class */
     public static void main(String[] sa) {
         if (sa.length != 1)
             throw new IllegalArgumentException(
